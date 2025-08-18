@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Enhanced Form Example</h1>
+
+<header>
+    <nav>
+        <ul>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Media">Media</a></li>
+            <li><a href="#Schedule">Schedule</a></li>
+            <li><a href="#Register">Register</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <section id="about">
+        <h2>About the event</h2>
+            <p>This page demonstrates lists, tables, media, and a complete HTML5 form with validation.</p>
+        <h3>Highlights</h3>
+            <ul>
+                <li>Semantics HTML5 structure</li>
+                <li>Accessible forms</li>
+                <li>HTML5 validation features</li>
+            </ul>
+        <h3>Agenda</h3>
+            <ol>
+                <li>Introduction</li>
+                <li>Form Demo</li>
+                <li>Q&A</li>
+            </ol>
+        <h3>Glossary</h3>
+            <dl>
+                <dt>Placeholder</dt>
+                <dd>Hint text in input fields</dd>
+                <dt>Required</dt>
+                <dd>Field must be filled before submission</dd>
+            </dl>
+    </section>
+
+    <section id="Media">
+        <h2>Media</h2>
+        <figure>
+            <img src="https://via.placeholder.com/300x150" alt="Place holder Image">
+            <figcaption>Example image with caption</figcaption>
+        </figure>
+        <figure>
+            <video control width="300">
+                <source src="" type="">
+            </video>
+            <iframe width="500" height="400" src="https://www.youtube.com/embed/9J7_NqgJSq8" title="Wonders of Italy | The Most Fascinating Places in Italy | Travel Video 4K" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <figcaption>Example video element</figcaption>
+        </figure>
+    </section>
+
+    <section id="Schedule">
+        <h2>Schedule</h2>
+        <table border="1">
+            <caption>Event Schedule</caption>
+            <thead>
+                <th>Time</th>
+                <th>Activity</th>
+                <th>Speaker</th>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>09:00</td> 
+                    <td>Registration</td> 
+                    <td>-</td> 
+                </tr>
+                <tr>
+                    <td>10:00</td>
+                    <td>Form Basic</td> 
+                    <td>Jane Doe</td> 
+                </tr>
+                <tr>
+                    <td>11:30</td>
+                    <td>Accessibility</td> 
+                    <td>John Smith</td> 
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="Registration Now">
+        <h2>Register Now</h2>
+        <form action="#" method="post" autocomplete="on">
+            <fieldset>
+                <legend>Personal Information</legend>
+                    <label for="fname">First Name:</label>
+                    <input type="text" id="fname" name="fname" placeholder="Jane" autocomplete="given-name"><br><br>
+                    
+                    <labe for="lname">Last Name:</labe>
+                    <input type="text" id="lname" name="lname" placeholder="Doe" autocomplete="given-name"><br><br>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="janedoe@gmail.com" required><br><br>
+
+                    <label for="dob"> Date of Birth</label>
+                    <input type="date" id="dob" name="dob" required><br><br>
+
+                    <label for="phone">Phone</label>
+                    <input type="tell" id="phone" name="phone" placeholder="0712345678" required><br><br>
+            </fieldset>
+
+            <fieldset>
+                    <legend>Preference</legend> 
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" minlenght="8" required><br><br>
+
+                    <label for="tickets">Number of Tickets:</label>
+                    <input type="number" id="tickets" name="tickets" min="1" max="10" required><br><br>
+
+                    <label for="role">Role:</label>
+                    <select id="role" name="role">
+                        <option>Frontend Engineer</option>
+                        <option>Backend Engineer</option>
+                        <option>Designer</option>
+                    </select><br><br>
+
+                    <p>T-shirt Size:</p>
+                        <input type="radio" id="small" name="size" value="S" required>
+                        <label for="small">S</label>
+
+                        <input type="radio" id="medium" name="size" value="M">
+                        <label for="medium">M</label>
+
+                        <input type="radio" id="large" name="size" value="L">
+                        <label for="large">L</label><br><br>
+
+                    <p>Interest:</p>
+                    <label for="accessibility">Accessibility</label>
+                    <input type="checkbox" id="accessibility" name="accessibility" value="accessibility">
+
+                    <label for="security">Security</label>
+                    <input type="checkbox" id="security" name="security" value="security"><br><br>
+
+                    <label for="avatar">Upload Avatar</label>
+                    <input for="file" id="avatar" name="avatar" accept="image/*"><br><br>
+
+                    <label for="notes">Notes:</label><br>
+                    <textarea id="notes" name="notes" rows="4" cols="40"></textarea>
+            </fieldset> 
+                <br>
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+        </form>
+    </section>
+</main>
+    <footer>
+        <p>&copy; 2025 Enhanced Form Example</p>
+    </footer>
+</body>
+</html>
